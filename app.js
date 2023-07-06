@@ -13,7 +13,7 @@ const juegoAdivinanza = () => {
     console.log('Intenta adivinar el número del 1 al 100.\n');
 
     while (numeroAdivinado !== numeroSecreto) {
-        numeroAdivinado = obtenerNumeroUsuario();
+        numeroAdivinado = parseInt(obtenerNumeroUsuario());
         verificarAdivinanza(numeroSecreto, numeroAdivinado);
     }
 };
